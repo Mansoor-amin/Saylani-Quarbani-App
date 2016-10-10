@@ -1,0 +1,80 @@
+<ion-view view-title="Saylani Quarbani onlineq">
+  <ion-nav-buttons side="right">
+    <div class="buttons" ng-click="">
+     <h4 class="button button-small button-calm">{{userName}}</h4>
+    </div>
+    <button class="button button-small button-calm" ng-click="login()" ng-hide="uid">
+      <i class="icon ion-log-in"></i>Login
+    </button>
+    <button class="button button-small button-calm" ng-click="logout()" ng-show="uid">
+      <i class="icon ion-log-out"></i>logout
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+
+    <div class="card">
+      <div class="item item-divider item-calm">
+          <h2>Quarbani Ka tariqa</h2>
+          <p>Sunat kay mutabiq</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" src="../img/Saylani-logo.png">
+        <p>
+          This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+          the content is from a card-body consisting of an image and paragraph text. The footer
+          consists of tabs, icons aligned left, within the card-footer.
+        </p>
+      </div>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <button ng-click="" class="item item-input button button-full button-calm">
+          More Details..
+        </button>
+      </div>
+
+    </div>
+    <div class="card">
+      <div class="item item-divider item-calm">
+          <h2>Quarbani Kay Janwar</h2>
+          <p>Names And Types</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" src="../img/Saylani-logo.png">
+        <p>
+          This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+          the content is from a card-body consisting of an image and paragraph text. The footer
+          consists of tabs, icons aligned left, within the card-footer.
+        </p>
+      </div>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <button ng-click="" class="item item-input button button-full button-calm">
+          More Details..
+        </button>
+      </div>
+
+    </div>
+    <div class="card">
+      <div class="item item-divider item-calm">
+          <h2>Quarbani Online</h2>
+          <p>Instant booking</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" src="../img/Saylani-logo.png">
+        <p>
+          This is a "Facebook" styled Card. The header is created from a Thumbnail List item,
+          the content is from a card-body consisting of an image and paragraph text. The footer
+          consists of tabs, icons aligned left, within the card-footer.
+        </p>
+      </div>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <button ng-click="gotoOQ()" class="item item-input button button-full button-calm">
+          More Details..
+        </button>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,57 @@
+<ion-nav-bar>
+  <ion-nav-back-button class="button-clear">
+    <i class="ion-arrow-left-c"></i> Back
+  </ion-nav-back-button>
+</ion-nav-bar>
+<ion-view view-title="{{}}" >
+  <ion-content>
+    <div class="list">
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Name</span>
+        <input type="text" ng-model="data.name" placeholder="Ali">
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Phone Number</span>
+        <input type="number" ng-model="data.phoneNo"  placeholder="xxxx xxxxxxx">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Email</span>
+        <input type="email" ng-model="data.email"  placeholder="ali@xyz.com">
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Address</span>
+        <input type="text" ng-model="data.address"  placeholder="write your complete adress">
+      </label>
+
+      <label class="item item-input item-select" ng-if="condition!='GOAT' ">
+        <div class="input-label">
+          Hissa
+        </div>
+        <select>
+          <option  ng-model="data.hissa"  value="1">1</option>
+          <option  ng-model="data.hissa"  value="2">2</option>
+          <option  ng-model="data.hissa"  value="3">3</option>
+          <option  ng-model="data.hissa"  value="4">4</option>
+          <option  ng-model="data.hissa"  value="5">5</option>
+          <option  ng-model="data.hissa"  value="6">6</option>
+          <option  ng-model="data.hissa"  value="7" selected>Complete</option>
+        </select>
+      </label>
+      <label class="item item-input item-select">
+          <div class="input-label">
+                Meat
+          </div>
+          <select>
+            <option  ng-model="data.meat"  value="">you have rights to  distribute.</option>
+            <option  ng-model="data.meat"  value="" selected>I myself distribute.</option>
+          </select>
+      </label>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <button ng-click="submitQurbani(data)" class="item item-input button button-full button-calm">
+          Make your Qurbani right way.
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
